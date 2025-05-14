@@ -65,5 +65,68 @@
             <textarea name="textarea" id="textarea" cols="40" rows="5"></textarea>
             <input type="submit" value="Submit Application">
         </div> 
+    </form>
+
+    <br>
+
+    <h2>Complex form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div><label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name"></div><br>
+
+            <div><label for="emailId">Email:</label>
+                <input type="email" id="emailId" name="emailId" placeholder="Enter Your Email"></div><br>
+
+            <div><label for="phoneNumber">Phone:</label>
+                <input type="phone" id="phoneNumber" name="phoneNumber" placeholder="Enter Your phone"></div><br>
+            
+            <div><label for="DateOfBirth">Date of birth:</label>
+                <input type="date" name="DateOfBirth" id="DateOfBirth"></div><br>
+
+            <div><span>Gender:</span>
+                <input type="radio" id="male" name="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female">
+                <label for="female">Female</label>
+            </div>
+            <br>
+            <div><label for="country">Select your country</label>
+                <select name="country" id="country" name="country">
+                    <option value="BD">Bangladesh</option>
+                    <option value="in">India</option>
+                    <option value="US">United State</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                    <option value="AU">Australia</option>
+                </select></div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Address:</legend>
+            <div><label for="street">Street:</label>
+                <input type="text" id="street" name="street"></div><br>
+
+            <div><label for="city">City</label>
+                <input type="text" id="city" name="city"></div><br>
+
+            <div><label for="state">State:</label>
+                <input type="text" id="state" name="state"></div><br>
+
+            <div><label for="code">Zip code:</label>
+                <input type="text" id="code" name="code"></div><br>
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="textarea">Comment:</label>
+            <br>
+            <textarea name="textarea" id="textarea" cols="30px" rows="6px"></textarea>
+            <br>
+            <label for="terms">I agree to the terms o service</label>
+            <input type="checkbox" name="terms" id="terms" required>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
